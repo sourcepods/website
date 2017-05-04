@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index,follow,noodp">
+    <meta name="googlebot" content="index,follow">
+    {{ .Hugo.Generator }}
+    <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ .Site.BaseURL }}favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{{ .Site.BaseURL }}favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css"/>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js"></script>-->
+</head>
+<body>
+
+<div class="uk-container uk-container-small uk-flex uk-flex-center">
+    <div class="uk-padding uk-padding-large">
+        <img src="{{ .Site.BaseURL }}logo.svg" alt="Logo" width="100%">
+        <h1 class="uk-heading-primary uk-text-center uk-heading-line"><span>GitPods</span></h1>
+        <h3 class="uk-text-center" style="margin-top: 10px;">git flying in the cloud!</h3>
+
+        <br>
+
+        <div class="uk-flex uk-flex-center">
+            <ul class="uk-subnav uk-subnav-divider uk-flex-inline">
+                <li><a href="https://github.com/gitpods/gitpod">GitHub</a></li>
+                <li><a href="https://godoc.org/github.com/gitpods/gitpod">GoDoc</a></li>
+                <li><span>FAQ</span></li>
+                <li><span>Chat</span></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
