@@ -1,4 +1,4 @@
-FROM abiosoft/caddy:0.10.2
+FROM abiosoft/caddy:0.11.1
 
 COPY Caddyfile /etc/Caddyfile
 COPY public/ /srv
