@@ -4,7 +4,7 @@
 	}
 
 	redir 301 {
-		if {>X-Forwarded-Host} not gitpods.com
-		/ https://gitpods.com{uri}
+		if {>X-Forwarded-Host} not sourcepods.com
+		/ https://sourcepods.com{uri}
 	}
 }
